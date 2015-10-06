@@ -15,8 +15,10 @@ void loop() {
   sensorValue1 = analogRead(analogInPin1);  
   sensorValue2 = analogRead(analogInPin2);
   //float voltage= sensorValue * (5.0 / 1023.0);
-  Serial.println("Sensor 1: " + sensorValue1); 
-  Serial.println("Sensor 2: " + sensorValue2);        
+  Serial.print("Sensor 1: ");
+  Serial.println(sensorValue1); 
+  Serial.print("Sensor 2: ");
+  Serial.println(sensorValue2);
                      
 }
 
