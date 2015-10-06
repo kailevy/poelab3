@@ -1,5 +1,5 @@
 
-const int analogInPin = A0;  /
+const int analogInPin = A0;  
 int sensorValue = 0;        // value read from the pot
 
 
@@ -10,8 +10,9 @@ void setup() {
 
 void loop() {
 
-  sensorValue = analogRead(analogInPin);            
-  Serial.print(sensorValue);      
+  sensorValue = analogRead(analogInPin);  
+  //float voltage= sensorValue * (5.0 / 1023.0);
+  Serial.println(sensorValue);      
 
   delay(2);                     
 }
